@@ -16,7 +16,7 @@ type QRCodeLabelProps = {
 
 const QRCodeLabel: React.FC<QRCodeLabelProps> = ({ fabric }) => (
 	<div className='label w-[2.625in] h-[1in] flex flex-row items-center justify-center text-[10pt] text-center overflow-hidden'>
-		<QRCode fgColor='#f58625' value={fabric.URL} size={56} />
+		<QRCode fgColor='#000000' value={fabric.URL} size={56} />
 		<div className='ml-2 truncate text-left'>
 			<p className={`uppercase ${myFont.className}`}>{fabric.Fabric},</p>
 			<strong className="capitalize font-[arial]">{fabric.Color}</strong>
