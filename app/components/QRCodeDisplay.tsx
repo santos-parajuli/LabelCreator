@@ -15,7 +15,7 @@ interface FabricRow {
 	URL: string;
 }
 
-const EXCEL_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRBDrWwlMG0SNfVGaiXX6iOswhXQgWqmDfgDTmJmkpQIMAvS02AgFdhaH0nteSdYKUGglhYhQ-rqDON/pub?gid=0&single=true&output=csv';
+const EXCEL_URL = 'https://docs.google.com/spreadsheets/d/1QgNbg2dUDWLO-7FVpHJSSZJKY1Crx2uT-VJXnJU2WqQ/edit?usp=sharing';
 
 const QRCodeDisplay = () => {
 	const [fabrics, setFabrics] = useState<FabricRow[]>([]);
