@@ -7,7 +7,7 @@ const myFont = localFont({ src: '../../public/gill-sans-alt-one-light.otf' });
 export interface FabricRow {
 	Fabric: string;
 	Color: string;
-	'On Sale': string;
+	'On Sale': string; // 'Yes' or 'No'
 	URL: string;
 }
 
@@ -25,6 +25,9 @@ const QRCodeLabel: React.FC<QRCodeLabelProps> = ({ fabric, labelType }) => (
 			<p className={`uppercase ${myFont.className}`}>{fabric.Fabric},</p>
 			<p className="capitalize font-bold font-[arial]">{fabric.Color}</p>
 			<p className={myFont.className}>{labelType}</p>
+			{fabric['On Sale'].toLowerCase() === 'yes' && (
+				<p className={`${myFont.className} text-orange-500 font-bold`}>Sale</p>
+			)}
 		</div>
 	</div>
 );
