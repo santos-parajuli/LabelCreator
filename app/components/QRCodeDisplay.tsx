@@ -51,6 +51,8 @@ const QRCodeDisplay = () => {
 						<option value="High Performance">High Performance</option>
 						<option value="High Performance/Outdoor">High Performance/Outdoor</option>
 						<option value="Drapery">Drapery</option>
+						<option value="Multi-Use, Pillow Only">Multi-Use, Pillow Only</option>
+						<option value="Double Width, Drapery">Double Width, Drapery</option>
 					</select>
 				</div>
 
