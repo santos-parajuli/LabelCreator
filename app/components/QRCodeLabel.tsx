@@ -11,7 +11,7 @@ export interface FabricRow {
 	URL: string;
 }
 
-export type LabelType = 'Multi-Use' | 'High Performance' | 'High Performance/Outdoor' | 'Drapery';
+export type LabelType = 'Multi-Use' | 'High Performance' | 'High Performance/Outdoor' | 'Drapery' | 'Multi-Use, Pillow Only' | 'Double Width, Drapery';
 
 type QRCodeLabelProps = {
 	fabric: FabricRow;
