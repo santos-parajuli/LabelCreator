@@ -47,6 +47,7 @@ const QRCodeDisplay = () => {
 						onChange={(e) => setLabelType(e.target.value as LabelType)}
 						className="border border-gray-300 rounded px-3 py-1 text-sm"
 					>
+						<option value=" "> </option>
 						<option value="Multi-Use">Multi-Use</option>
 						<option value="High Performance">High Performance</option>
 						<option value="High Performance/Outdoor">High Performance/Outdoor</option>
