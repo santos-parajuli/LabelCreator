@@ -22,7 +22,10 @@ const QRCodeLabel: React.FC<QRCodeLabelProps> = ({ fabric, labelType }) => (
 	<div className='label w-[2.625in] h-[1in] flex flex-row items-center justify-center text-[9pt] text-center overflow-hidden'>
 		<QRCode fgColor='#000000' value={fabric.URL} size={56} />
 		<div className='ml-3 truncate text-left'>
-			<p className={`uppercase ${myFont.className}`}>{fabric.Fabric ? fabric.Fabric+"," : ""}</p>
+			<p className={`uppercase ${myFont.className}`}>
+			<p className={`uppercase ${myFont.className}`}>
+				{fabric.Fabric?.trim() ? `${fabric.Fabric},` : ""}
+			</p>
 			<p className="capitalize font-bold font-[arial]">{fabric.Color}</p>
 			<p className={myFont.className}>{labelType}</p>
 			{fabric['On Sale'].toLowerCase() === 'yes' && (
